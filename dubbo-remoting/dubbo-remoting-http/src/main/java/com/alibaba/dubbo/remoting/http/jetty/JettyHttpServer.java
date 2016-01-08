@@ -57,7 +57,8 @@ public class JettyHttpServer extends AbstractHttpServer {
         server.addConnector(connector);
         
         ServletHandler servletHandler = new ServletHandler();
-        ServletHolder servletHolder = servletHandler.addServletWithMapping(DispatcherServlet.class, "/*");
+        ServletHolder servletHolder= new ServletHolder(new DispatcherServlet());//修复和jetty不兼容的bug。必须在这个时机进行实例化。
+        servletHandler.addServletWithMapping(servletHolder, "/*");
         servletHolder.setInitOrder(2);
         
         server.addHandler(servletHandler);
