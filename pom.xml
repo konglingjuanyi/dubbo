@@ -81,7 +81,7 @@
 	</profiles>
 	<properties>
 		<!-- Common libs -->
-		<spring_version>2.5.6.SEC03</spring_version>
+		<spring_version>4.1.9.RELEASE</spring_version>
 		<javassist_version>3.15.0-GA</javassist_version>
 		<netty_version>3.2.5.Final</netty_version>
 		<mina_version>1.1.7</mina_version>
@@ -141,7 +141,7 @@
 			<!-- Common libs -->
 			<dependency>
 				<groupId>org.springframework</groupId>
-				<artifactId>spring</artifactId>
+				<artifactId>spring-context</artifactId>
 				<version>${spring_version}</version>
 			</dependency>
 			<dependency>
@@ -455,7 +455,7 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<!--
 	<issueManagement>
 		<system>github</system>
 		<url>https://github.com/alibaba/dubbo/issues</url>
@@ -464,6 +464,7 @@
 		<url>https://github.com/alibaba/dubbo</url>
 		<connection>https://github.com/alibaba/dubbo.git</connection>
 	</scm>
+	-->
 	<mailingLists>
 		<mailingList>
 			<name>Dubbo User Mailling List</name>

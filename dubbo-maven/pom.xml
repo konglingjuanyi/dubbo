@@ -44,8 +44,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring</artifactId>
-			<version>2.5.6.SEC03</version>
+			<artifactId>spring-context</artifactId>
+			<version>4.1.9.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.javassist</groupId>
